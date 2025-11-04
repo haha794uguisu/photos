@@ -13,11 +13,22 @@ const img_date = [
     20211121,
     20211211,
     20211231,
+    20220101,
+    20220110,
     20220123,
     20220205,
     20220205,
+    20220205,
     20241110,
-    20250103
+    20250103,
+    20250103,
+    20250103,
+    20250103,
+    20250103,
+    20250814,
+    20250814,
+    20250814,
+    20250814
 ]
 
 const img_inner = [
@@ -35,11 +46,22 @@ const img_inner = [
     "aosagi",
     "ootaka",
     "kawasemi_1",
+    "joubitaki",
+    "hakusekirei",
     "misago",
     "hikuina",
     "suzume",
+    "gabityou",
     "kawasemi_2",
-    "kisekirei"
+    "kakesu",
+    "sirohara",
+    "aoji",
+    "kuroji",
+    "kisekirei",
+    "haguro",
+    "tobi",
+    "isosigi",
+    "segurosekirei"
 ]
 
 const img_name = [
@@ -57,11 +79,22 @@ const img_name = [
     "アオサギ",
     "オオタカ",
     "カワセミ①",
+    "ジョウビタキ",
+    "ハクセキレイ",
     "ミサゴ",
     "ヒクイナ",
     "スズメ",
+    "ガビチョウ",
     "カワセミ②",
-    "キセキレイ"
+    "カケス",
+    "シロハラ",
+    "アオジ",
+    "クロジ",
+    "キセキレイ",
+    "ハグロトンボ",
+    "トビ",
+    "イソシギ",
+    "セグロセキレイ"
 ]
 
 for(let i = 0; i < img_date.length; i++){
