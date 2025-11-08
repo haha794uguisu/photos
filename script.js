@@ -250,7 +250,36 @@ function accept(){
     clearContainerA();
 }
 
- let showNumber
+function back(){
+    if (showNumber >=1){
+        showNumber -= 1;
+        showImage(showNumber);
+    }
+}
+
+function next(){
+    if (showNumber <= img_inner.length -2){
+        showNumber += 1;
+        showImage(showNumber);
+    }
+}
+
+let ifshowCont = true;
+const elementControl = document.getElementById('control_panel');
+const elementContainerA = document.getElementById('containerA');
+function showControl(){
+    if (show_control.checked){
+        ifshowCont = true;
+        elementControl.style.display = 'block';
+        elementContainerA.style.width = '75%';
+    }else{
+        ifshowCont = false;
+        elementControl.style.display = 'none';
+        elementContainerA.style.width = '100%';
+    }
+}
+
+let showNumber
 window.addEventListener('DOMContentLoaded', () => {
     showNumber = 19;
     clearContainerA();
