@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
 body{
+    scroll-behavior: smooth;
     margin: 0;
+    display: flex;
     background-image: url(https://raw.githubusercontent.com/haha794uguisu/photos/refs/heads/main/img/p0527_l.jpg);
 }
 
-.containerA{
-    width: 100%;
+.head_img{
+    text-align: center;
+    margin: 50px 0 50px 0;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+    width: 96%;
+}
+
+#containerA{
+    overflow: hidden;
+    display: inline-block;
+    width: 75%;
 }
 
 [id^="sub"]{
@@ -28,6 +42,7 @@ body{
 
 .a{
     width: 100%;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 .a:hover{
@@ -36,13 +51,36 @@ body{
 
 .name{
     line-height: 0%;
-    font-size: 23px;
+    font-size: clamp(5px, 3vw, 23px);
     font-weight: 500;
     text-align: center;
 }
+
 .date{
     line-height: 0%;
-    font-size: 15px;
+    font-size: clamp(5px, 2.5vw, 15px);
     font-weight: 400;
     text-align: center;
+}
+
+.control{
+    position: fixed;
+    background-color: beige;
+    margin-left: 75%;
+    width: 25%;
+    height: 100%;
+    padding: 3%;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
