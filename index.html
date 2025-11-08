@@ -8,8 +8,24 @@
         <script type='text/javascript' src='script.js' defer></script>
     </head>
     <body>
+        
+        
         <div id="containerA">
-
+            
         </div>
+
+        <div class="control">
+            <div class="line">
+                <input type="checkbox" id="bird" checked onchange="checkBird()"><label for="bird">鳥</label>
+            </div>
+            <div class="line">
+                <input type="checkbox" id="insect" checked onchange="checkInsect()"><label for="insect">虫</label>
+            </div>
+            <div class="line">
+                <input type="checkbox" id="other" checked onchange="checkOther()"><label for="other">その他</label>
+            </div>
+            <button id="accept" onclick="accept()">適用</button>
+        </div>
+
     </body>
 </html>
