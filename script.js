@@ -154,6 +154,9 @@ const img_tag = [
     "b"
 ]
 
+let headImage;
+let result_count;
+
 
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
@@ -162,7 +165,9 @@ function removeAllChildNodes(parent) {
 }
 
 function clearContainerA(){
-    let headImage = document.createElement('img');
+    result_count = 0;
+
+    headImage = document.createElement('img');
 
     headImage.src = 'https://raw.githubusercontent.com/haha794uguisu/photos/refs/heads/main/photo/'+img_inner[showNumber]+'.jpg';
     headImage.alt = "head_image";
@@ -173,11 +178,11 @@ function clearContainerA(){
     (conHead).appendChild(headImage);
 
     for(let i = 0; i < img_date.length; i++){
-        if ((!ifBird && img_tag[i]=='b') || (!ifInsect && img_tag[i]=='i') || (!ifOther && img_tag[i]=='o')){
+        if ((!ifBird && img_tag[i]=='b') || (!ifInsect && img_tag[i]=='i') || (!ifOther && img_tag[i]=='o') || (!img_name[i].includes(search_text.value))){
             continue;
         }
 
-
+        result_count ++;
 
         //id = sub+i
         let newDiv1 = document.createElement('div');
@@ -270,8 +275,12 @@ function checkOther(){
 }
 
 function accept(){
+    console.log("search_text:", search_text.value);
     removeAllChildNodes(document.getElementById('containerA'));
     clearContainerA();
+    console.log("result_count:", result_count);
+    let resultElement = document.getElementById('result');
+    resultElement.textContent = "検索結果: " + result_count + "件"; 
 }
 
 function back(){
