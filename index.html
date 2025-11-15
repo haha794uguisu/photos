@@ -17,6 +17,9 @@
         </div>
         <div class="control" id="control_panel">
             <div class="line">
+                <input type="text" id="search_text" placeholder="検索語を入力">
+            </div>
+            <div class="line">
                 <input type="checkbox" id="bird" checked onchange="checkBird()"><label for="bird">鳥</label>
             </div>
             <div class="line">
@@ -29,8 +32,8 @@
             <br>
             <button id="back" onclick="back()">←</button>
             <button id="next" onclick="next()">→</button>
+            <p id="result"></p>
         </div>
 
     </body>
 </html>
-
