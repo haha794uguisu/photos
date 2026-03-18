@@ -186,7 +186,7 @@ function clearContainerA(){
     (conHead).appendChild(headImage);
 
     for(let i = 0; i < img_date.length; i++){
-        if ((!ifBird && img_tag[i]=='b') || (!ifInsect && img_tag[i]=='i') || (!ifOther && img_tag[i]=='o') || (!img_name[i].includes(search_text.value))){
+        if ((!ifBird && img_tag[i]=='b') || (!ifInsect && img_tag[i]=='i') || (!ifOther && img_tag[i]=='o') || (!ifHuman && img_tag[i]=='h') || (!img_name[i].includes(search_text.value))){
             continue;
         }
 
@@ -336,4 +336,4 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 checkHuman();
-console.log("checked");
+console.log("re-checked");
