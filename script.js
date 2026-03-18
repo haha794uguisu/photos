@@ -282,7 +282,7 @@ function checkOther(){
     }
 }
 
-let ifHuman = true;
+let ifHuman = false;
 function checkHuman(){
     if (human.checked){
         ifHuman = true;
