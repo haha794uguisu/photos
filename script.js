@@ -158,8 +158,8 @@ const img_tag = [
     "b",
     "b",
     "b",
-    "o",
-    "o"
+    "h",
+    "h"
 ]
 
 let headImage;
@@ -279,6 +279,15 @@ function checkOther(){
         ifOther = true;
     }else{
         ifOther = false;
+    }
+}
+
+let ifHuman = true;
+function checkHuman(){
+    if (human.checked){
+        ifHuman = true;
+    }else{
+        ifHuman = false;
     }
 }
 
