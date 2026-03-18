@@ -35,6 +35,7 @@ const img_date = [
     20250814,
     20250814,
     20250814,
+    20260319,
     20260319
 ]
 
@@ -75,7 +76,8 @@ const img_inner = [
     "tobi",
     "isosigi",
     "segurosekirei",
-    "ikemen"
+    "ikemen",
+    "hohoemi"
 ]
 
 const img_name = [
@@ -115,7 +117,8 @@ const img_name = [
     "トビ",
     "イソシギ",
     "セグロセキレイ",
-    "若い男性のポートレート"
+    "若い男性のポートレート",
+    "優しい微笑みの青年"
 ]
 
 const img_tag = [
@@ -155,6 +158,7 @@ const img_tag = [
     "b",
     "b",
     "b",
+    "o",
     "o"
 ]
 
