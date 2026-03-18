@@ -334,3 +334,6 @@ window.addEventListener('DOMContentLoaded', () => {
     showNumber = 19;
     clearContainerA();
 });
+
+checkHuman();
+console.log("checked");
