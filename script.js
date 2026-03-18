@@ -34,7 +34,8 @@ const img_date = [
     20250814,
     20250814,
     20250814,
-    20250814
+    20250814,
+    20260319
 ]
 
 const img_inner = [
@@ -73,7 +74,8 @@ const img_inner = [
     "haguro",
     "tobi",
     "isosigi",
-    "segurosekirei"
+    "segurosekirei",
+    "ikemen"
 ]
 
 const img_name = [
@@ -112,7 +114,8 @@ const img_name = [
     "ハグロトンボ",
     "トビ",
     "イソシギ",
-    "セグロセキレイ"
+    "セグロセキレイ",
+    "若い男性のポートレート"
 ]
 
 const img_tag = [
@@ -151,7 +154,8 @@ const img_tag = [
     "i",
     "b",
     "b",
-    "b"
+    "b",
+    "o"
 ]
 
 let headImage;
